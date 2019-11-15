@@ -13,16 +13,16 @@ public class Teste {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpaPU");
 		EntityManager em = emf.createEntityManager();
 //incluirFuncionario(em);
-//listarFuncionarios(em);
-buscarFuncionario(em, "2000");
+listarFuncionarios(em);
+//buscarFuncionario(em, "2000");
 	}
 
 	private static void incluirFuncionario(EntityManager em) {
 		Helper dao = new Helper(em);
 
 		Funcionario funcionario = new Funcionario();
-		funcionario.setMatricula("2000");
-		funcionario.setNome("Alberto Santos");
+		funcionario.setMatricula("2001");
+		funcionario.setNome("Alberto Santos Novo");
 		Tarefa tarefa = new Tarefa();
 		tarefa.setDescricao("Teste Unitário");
 		tarefa.setDuracao(100);
