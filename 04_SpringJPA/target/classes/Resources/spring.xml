@@ -26,7 +26,7 @@ http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/dbprodutos" />
+			value="jdbc:mysql://localhost:3306/dbprodutos?createDatabaseIfNotExist=true&amp;serverTimezone=UTC&amp;useSSL=false" />
 		<property name="username" value="root" />
 		<property name="password" value="fiap" />
 	</bean>
